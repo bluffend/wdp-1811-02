@@ -1,0 +1,46 @@
+.hot-deals  {
+    display: flex;
+    flex-direction: column;
+        .bar {
+            display: flex;
+            background-color: $form-border-color;
+            margin: 0 1px;
+            padding: 15px 10px 10px 10px;
+            justify-content: space-between;
+            align-items: center;
+            .bar-header {
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+            .dots {
+                ul {
+                 
+                  padding: 0 0 0 1rem;
+                  list-style: none;
+                  
+               
+                  li {
+                    display: inline-block;
+                    margin-left: 0.5rem;
+            
+                    a {
+                      display: block;
+                      width: 13px;
+                      height: 13px;
+                      border-radius: 6px;
+                      background-color: #ffffff;
+            
+                      &.active,
+                      &:hover {
+                        @extend %hover-bg;
+                        background-color: $primary;
+                      }
+                    }
+                  }
+                }
+              }
+        }
+        .product-box {
+            border-top: none;
+        }
+}
