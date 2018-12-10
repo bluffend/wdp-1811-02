@@ -11,14 +11,18 @@
             .bar-header {
                 color: #ffffff;
                 text-transform: uppercase;
+              h5 {
+                margin: .3rem 0;
+              }
             }
+
             .dots {
+              line-height: 0;
                 ul {
-                 
+                  margin: .3rem 0;
                   padding: 0 0 0 1rem;
                   list-style: none;
                   
-               
                   li {
                     display: inline-block;
                     margin-left: 0.5rem;
@@ -43,4 +47,40 @@
         .product-box {
             border-top: none;
         }
+}
+.featured-box {
+  display: flex;
+  flex-direction: column;
+  .featured--slider {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/blog/01.jpg");
+    background-size: cover;
+    background-position: center
+    h1 {
+      color: pink;
+    }
+  }
+  .featured--slider-nav {
+    display: flex;
+    flex-direction: row;
+    .nav-left,
+    .nav-right {
+      flex: 1;
+      padding: 15px 10px 10px 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: #ffffff;
+      background-color: $form-border-color;
+      ransition: background-color $hover-bg-transition ease-out;
+      .fas {
+        margin: .3rem 0;
+      }
+      &:hover {
+        @extend %hover-bg;
+        background-color: $primary
+      }
+    }
+  }
 }
