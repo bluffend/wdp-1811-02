@@ -5,11 +5,11 @@
     display: flex;
     background-color: $form-border-color;
     margin: 0 1px;
-    padding: 15px 10px 10px 10px;
+    padding: 15px 10px 10px;
     justify-content: space-between;
     align-items: center;
     .bar-header {
-        color: #ffffff;
+        color: #fff;
         text-transform: uppercase;
       h5 {
         margin: .3rem 0;
@@ -32,7 +32,7 @@
               width: 13px;
               height: 13px;
               border-radius: 6px;
-              background-color: #ffffff;
+              background-color: #fff;
     
               &.active,
               &:hover {
@@ -78,7 +78,7 @@
           vertical-align: middle;
           border-radius: 50%;
           background-color: $text-color;
-          color: #ffffff;
+          color: #fff;
           opacity: 0;
           transition: .7s ease;
           p {
@@ -109,7 +109,7 @@
     background-position: center;
     .featured--slider-textarea {
       width: 100%;
-      color: #ffffff;
+      color: #fff;
       text-align: center;
       text-transform: uppercase;
       padding: 4rem 0;
@@ -129,7 +129,7 @@
     .btn-main {
       margin-top: -1.5rem;
       color: $form-border-color;
-      background-color: #ffffff;
+      background-color: #fff;
       transition: background-color $hover-bg-transition ease-out;
       &:hover {
         @extend %hover-bg;
