@@ -18,13 +18,16 @@
 @import "components/post-box";
 @import "components/product-box";
 @import "components/feedback";
+@import "components/gallery";
+@import "components/promo-box";
 
 @import "components/section--features";
+@import "components/section--gallery";
 
 body {
   font-family: 'Poppins', sans-serif;
 }
 
-:focus {
+*:focus,  button:focus {
   outline: 0;
 }
