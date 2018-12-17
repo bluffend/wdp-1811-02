@@ -1,5 +1,43 @@
 .quotation-mark {
     width: 10%;
     margin: 0 auto;
-    font-size: 56px;
+    margin-bottom: -70px;
+    margin-top: -30px;
+    font-size: 98px;
+    text-align: center;
+}
+
+.feedback-message {
+    text-align: center;
+}
+
+.feedback-person {
+    width: 260px;
+    height: 150px;
+    margin-bottom: 5px;
+   
+    .person-photo {
+        width: 80px;
+        height: 80px;
+        float: left;
+        background-image: url("../images/new/people/face1.jpg");
+        background-size: cover;
+        border-radius: 5px;
+        border: 1px solid #e1e1e1;
+    }
+
+    .person-details {
+        width: 150px;
+        height: 80px;
+        float:left;
+        margin-left: -5px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-flow: column;
+
+        .person-name {
+            font-weight: bold;
+        }
+    }
 }
