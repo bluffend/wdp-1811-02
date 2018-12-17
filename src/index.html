@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Furnitures shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.8/tiny-slider.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -255,6 +256,55 @@
       </div>
     </div>
   </div>
+ 
+  <div class="section--promotions">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="promo-box">
+            <img class="promo-box-img" src="./images/new/bed/09.jpg">
+            <div class="rebate">
+            </div>
+            <div class="rebate-info">
+              <p class="rebate-info-title">GUEST ROOM</p>
+              <p class="product-name">SOFA</p>
+              <p class="product-rebate">-20%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div class="col-12">
+              <div class="promo-box-small top">
+                <div class="collection">
+                  <p class="collection-title">
+                    <span class="promo-bold">OFFICE</span>
+                    CHAIR
+                  </p>
+                  <p class="collection-subtitle">COLLECTION</p>
+                  <p class="collection-price">$ 200.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="promo-box-small down">
+                <div class="special-collection">
+                  <p class="special-collection-title">
+                    <span class="promo-bold">SPECIAL</span>
+                    COLLECTION
+                  </p>
+                  <p class="special-collection-subtitle">SAVE UP TO 45% ON FURNITURE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="section--products">
     <div class="container">
       <div class="panel-bar">
@@ -263,282 +313,1512 @@
             <h3>New furniture</h3>
           </div>
           <div class="col menu">
-            <ul>
-              <li><a href="#" class="active">Bed</a></li>
-              <li><a href="#">Chair</a></li>
-              <li><a href="#">Sofa</a></li>
-              <li><a href="#">Table</a></li>
-              <li><a href="#">Dining</a></li>
-            </ul>
-          </div>
-          <div class="col-auto dots">
-            <ul>
-              <li><a href="#" class="active"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+            <ul class="nav" id="myTab" role="tablist">
+              <li class="nav-item"><a class="nav-link active" id="bed-tab" data-toggle="tab" href="#products-bed" role="tab" aria-controls="bed"
+                  aria-selected="true">Bed</a></li>
+              <li class="nav-item"><a class="nav-link" id="chair-tab" data-toggle="tab" href="#products-chair" role="tab" aria-controls="chair"
+                  aria-selected="false">Chair</a></li>
+              <li class="nav-item"><a class="nav-link" id="sofa-tab" data-toggle="tab" href="#products-sofa" role="tab" aria-controls="sofa"
+                  aria-selected="false">Sofa</a></li>
+              <li class="nav-item"><a class="nav-link" id="table-tab" data-toggle="tab" href="#products-table" role="tab" aria-controls="table"
+                  aria-selected="false">Table</a></li>
+              <li class="nav-item"><a class="nav-link" id="dining-tab" data-toggle="tab" href="#products-dining" role="tab" aria-controls="dining"
+                  aria-selected="false">Dining</a></li>
             </ul>
           </div>
         </div>
       </div>
+      <div class="tab-content tab-box" id="nav-tabContent">
+        <!-- PRODUCTS with DOTS: 1 / BED -->
+        <div class="tab-pane fade show active" id="products-bed" role="tabpanel" aria-labelledby="bed-tab">
+          <div class="panel-bar tab-dots">
+            <div class="col-auto dots">
+              <ul>
+                <li><a href="#" class="active"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="product-box">
+                <div class="photo">
+                  <img class="photo__image" src="./images/new/bed/01.jpg">
+                  <div class="sale">sale</div>
+                  <div class="buttons">
+                    <a href="#" class="btn-main-small">Quick View</a>
+                    <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5>Aenean Ru Bristique</h5>
+                  <div class="stars highlightedStars"> 
+                    <a class="star markedStar"></a>
+                    <a class="star markedStar"></a>
+                    <a class="star markedStar"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="actions">
+                  <div class="outlines">
+                    <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                    <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                  </div>
+                  <div class="price">
+                    <div class="price__oldprice">$ 50.00</div>
+                    <div class="btn-main-small no-hover price">$ 30.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="product-box">
+                <div class="photo">
+                  <img class="photo__image" src="./images/new/bed/02.jpg">
+                  <div class="sale">sale</div>
+                  <div class="buttons">
+                    <a href="#" class="btn-main-small">Quick View</a>
+                    <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5>Aenean Ru Bristique</h5>
+                  <div class="stars"> 
+                    <a class="star full"></a>
+                    <a class="star full"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="actions">
+                  <div class="outlines">
+                    <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                    <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                  </div>
+                  <div class="price">
+                    <div class="price__oldprice">$ 50.00</div>
+                    <div class="btn-main-small no-hover price">$ 30.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="product-box">
+                <div class="photo">
+                  <img class="photo__image" src="./images/new/bed/03.jpg">
+                  <div class="sale">sale</div>
+                  <div class="buttons">
+                    <a href="#" class="btn-main-small">Quick View</a>
+                    <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5>Aenean Ru Bristique</h5>
+                  <div class="stars"> 
+                    <a class="star full"></a>
+                    <a class="star full"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="actions">
+                  <div class="outlines">
+                    <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                    <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                  </div>
+                  <div class="price">
+                    <div class="btn-main-small no-hover price">$ 30.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="product-box">
+                <div class="photo">
+                  <img class="photo__image" src="./images/new/bed/04.jpg">
+                  <div class="sale">sale</div>
+                  <div class="buttons">
+                    <a href="#" class="btn-main-small">Quick View</a>
+                    <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5>Aenean Ru Bristique</h5>
+                  <div class="stars"> 
+                    <a class="star full"></a>
+                    <a class="star full"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="actions">
+                  <div class="outlines">
+                    <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                    <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                  </div>
+                  <div class="price">
+                    <div class="price__oldprice">$ 50.00</div>
+                    <div class="btn-main-small no-hover price">$ 30.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="product-box">
+                <div class="photo">
+                  <img class="photo__image" src="./images/new/bed/05.jpg">
+                  <div class="sale">sale</div>
+                  <div class="buttons">
+                    <a href="#" class="btn-main-small">Quick View</a>
+                    <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5>Aenean Ru Bristique</h5>
+                  <div class="stars"> 
+                    <a class="star full"></a>
+                    <a class="star full"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="actions">
+                  <div class="outlines">
+                    <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                    <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                  </div>
+                  <div class="price">
+                    <div class="btn-main-small no-hover price">$ 30.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="product-box">
+                <div class="photo">
+                  <img class="photo__image" src="./images/new/bed/06.jpg">
+                  <div class="sale">sale</div>
+                  <div class="buttons">
+                    <a href="#" class="btn-main-small">Quick View</a>
+                    <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5>Aenean Ru Bristique</h5>
+                  <div class="stars"> 
+                    <a class="star full"></a>
+                    <a class="star full"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="actions">
+                  <div class="outlines">
+                    <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                    <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                  </div>
+                  <div class="price">
+                    <div class="btn-main-small no-hover price">$ 30.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="product-box">
+                <div class="photo">
+                  <img class="photo__image" src="./images/new/bed/07.jpg">
+                  <div class="sale">sale</div>
+                  <div class="buttons">
+                    <a href="#" class="btn-main-small">Quick View</a>
+                    <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5>Aenean Ru Bristique</h5>
+                  <div class="stars"> 
+                    <a class="star full"></a>
+                    <a class="star full"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="actions">
+                  <div class="outlines">
+                    <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                    <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                  </div>
+                  <div class="price">
+                    <div class="price__oldprice">$ 50.00</div>
+                    <div class="btn-main-small no-hover price">$ 30.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="product-box">
+                <div class="photo">
+                  <img class="photo__image" src="./images/new/bed/08.jpg">
+                  <div class="sale">sale</div>
+                  <div class="buttons">
+                    <a href="#" class="btn-main-small">Quick View</a>
+                    <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5>Aenean Ru Bristique</h5>
+                  <div class="stars"> 
+                    <a class="star full"></a>
+                    <a class="star full"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                    <a class="star"></a>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="actions">
+                  <div class="outlines">
+                    <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                    <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                  </div>
+                  <div class="price">
+                    <div class="btn-main-small no-hover price">$ 30.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PRODUCTS with DOTS: 2 / CHAIR -->
+        <div class="tab-pane fade" id="products-chair" role="tabpanel" aria-labelledby="chair-tab">
+          <div class="panel-bar tab-dots">
+            <div class="col-auto dots">
+              <ul>
+                <li><a href="#" class="active"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/chair/01.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/chair/02.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/chair/03.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/chair/04.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/chair/05.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/chair/06.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/chair/07.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/chair/08.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- PRODUCTS with DOTS: 3 / SOFA -->
+        <div class="tab-pane fade" id="products-sofa" role="tabpanel" aria-labelledby="sofa-sofa">
+          <div class="panel-bar tab-dots">
+            <div class="col-auto dots">
+              <ul>
+                <li><a href="#" class="active"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/sofa/01.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/sofa/02.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/sofa/03.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/sofa/04.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/sofa/05.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/sofa/06.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/sofa/07.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/sofa/08.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- PRODUCTS with DOTS: 4 / TABLE -->
+        <div class="tab-pane fade" id="products-table" role="tabpanel" aria-labelledby="table-tab">
+          <div class="panel-bar tab-dots">
+            <div class="col-auto dots">
+              <ul>
+                <li><a href="#" class="active"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/01.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/02.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/03.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/04.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/05.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/06.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/07.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/08.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- PRODUCTS with DOTS: 5 / DINING -->
+        <div class=" tab-pane fade" id="products-dining" role="tabpanel" aria-labelledby="dining-tab">
+          <div class="panel-bar tab-dots">
+            <div class="col-auto dots">
+              <ul>
+                <li><a href="#" class="active"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/01.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/02.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/03.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/04.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/05.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/06.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/07.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="price__oldprice">$ 50.00</div>
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="product-box">
+              <div class="photo">
+                <img class="photo__image" src="./images/new/bed/08.jpg">
+                <div class="sale">sale</div>
+                <div class="buttons">
+                  <a href="#" class="btn-main-small">Quick View</a>
+                  <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Aenean Ru Bristique</h5>
+                <div class="stars">
+                  <a href="#" class="full"></a>
+                  <a href="#" class="full"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="actions">
+                <div class="outlines">
+                  <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="price">
+                  <div class="btn-main-small no-hover price">$ 30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section--gallery">
+    <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="product-box">
-            <div class="photo">
-              <img class="photo__image" src="./images/new/bed/01.jpg">
-              <div class="sale">sale</div>
-              <div class="buttons">
-                <a href="#" class="btn-main-small">Quick View</a>
-                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+        <div class="col-6">
+          <div class="panel-bar">
+            <div class="row no-gutters align-items-end">
+              <div class="col-auto heading">
+                <h3>Furniture gallery</h3>
               </div>
-            </div>
-            <div class="content">
-              <h5>Aenean Ru Bristique</h5>
-              <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="line"></div>
-            <div class="actions">
-              <div class="outlines">
-                <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
-                <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
-              </div>
-              <div class="price">
-                <div class="price__oldprice">$ 50.00</div>
-                <div class="btn-main-small no-hover price">$ 30.00</div>
-              </div>
+              <div class="col"></div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="product-box">
-            <div class="photo">
-              <img class="photo__image" src="./images/new/bed/02.jpg">
-              <div class="sale">sale</div>
-              <div class="buttons">
-                <a href="#" class="btn-main-small">Quick View</a>
-                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Aenean Ru Bristique</h5>
-              <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="line"></div>
-            <div class="actions">
-              <div class="outlines">
-                <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
-                <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
-              </div>
-              <div class="price">
-                <div class="price__oldprice">$ 50.00</div>
-                <div class="btn-main-small no-hover price">$ 30.00</div>
-              </div>
-            </div>
+          <!-- FURNITURE GALLERY - MENU -->
+          <div class="col menu gallery-menu">
+            <ul class="nav gallery-menu__list" id="galleryTab" role="tablist">
+              <li class="nav-item gallery-menu__item">
+                <a class="nav-link gallery-menu__link" id="galleryFeatured-tab" data-toggle="tab" href="#gallery-featured" role="tab" aria-controls="gFeatured"
+                        aria-selected="true">Featured</a></li>
+              <li class="nav-item active gallery-menu__item">
+                <a class="nav-link gallery-menu__link" id="galleryTopseller-tab" data-toggle="tab" href="#gallery-topseller" role="tab" aria-controls="gTopseller"
+                        aria-selected="true">Top seller</a></li>
+              <li class="nav-item gallery-menu__item">
+                <a class="nav-link gallery-menu__link" id="gallerySaleoff-tab" data-toggle="tab" href="#gallery-saleoff" role="tab" aria-controls="gSaleoff"
+                        aria-selected="true">Sale off</a></li>
+              <li class="nav-item gallery-menu__item">
+                <a class="nav-link gallery-menu__link" id="galleryToprated-tab" data-toggle="tab" href="#gallery-toprated" role="tab" aria-controls="gToprated"
+                        aria-selected="true">Top rated</a></li>
+            </ul>
           </div>
+          <!-- <div class="tab-content tab-box" id="nav-galleryContent"> -->
+            <!-- GALLERY TAB CONTENT: 1 / FEATURED -->
+            <!-- <div class="tab-pane fade" id="galleryFeatured" role="tabpanel" aria-labelledby="featured-tab"> -->
+            <!-- </div> -->
+            <!-- GALLERY TAB CONTENT: 2 / TOP SELLER -->
+            <!-- <div class="tab-pane fade show active" id="galleryTopseller" role="tabpanel" aria-labelledby="topseller-tab"> -->
+            <div class="gallery-content">
+              <div class="gallery-tabcontent">
+                <img class="gallery-tabcontent__big-image" src="./images/gallery/topseller/01.jpg">
+                <div class="gallery-tabcontent__buttons-box">
+                  <div class="btn-container">
+                    <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                    <div class="btn-tooltip">Add to Favorites</div>
+                  </div>
+                  <div class="btn-container">
+                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                    <div class="btn-tooltip">Add to Compare</div>
+                  </div>
+                  <div class="btn-container">
+                  <a href="#" class="btn-outline"><i class="fas fa-eye"></i></a>
+                    <div class="btn-tooltip">See details</div>
+                  </div>
+                  <div class="btn-container">
+                  <a href="#" class="btn-outline"><i class="fa fa-shopping-basket"></i></a>
+                    <div class="btn-tooltip">Add to Cart</div>
+                  </div>
+                </div>
+                <div class="gallery-tabcontent__product-description">
+                  <div class="product__info">
+                    <div class="content">
+                      <h5 class="product-title">Aenean Ru Bristique</h5>
+                      <div class="stars">
+                        <a href="#" class="full"></a>
+                        <a href="#" class="full"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </div>
+                      <div class="triangle-topleft"></div>
+                      <div class="triangle-bottomright"></div>
+                    </div>
+                  </div>
+                  <div class="product__prices">
+                    <div class="price">$120.00</div>
+                    <div class="old-price">$160.00</div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-thumbnails">
+                <button class="btn-gallery" type="button">
+                    <i class="fas fa-angle-left"></i>
+                </button>
+                <div class="gallery-thumbnails__content">
+                  <ul class="thumbnails-list">
+                    <li class="thumbnails-item">
+                      <img class="thumbnails-image--active" src="images/gallery/topseller/01_thumb.jpg">
+                    </li>
+                    <li class="thumbnails-item">
+                      <img class="thumbnails-image" src="images/gallery/topseller/02_thumb.jpg">
+                    </li>
+                    <li class="thumbnails-item">
+                      <img class="thumbnails-image" src="images/gallery/topseller/03_thumb.jpg">
+                    </li>
+                    <li class="thumbnails-item">
+                      <img class="thumbnails-image" src="images/gallery/topseller/04_thumb.jpg">
+                    </li>
+                    <li class="thumbnails-item">
+                      <img class="thumbnails-image" src="images/gallery/topseller/05_thumb.jpg">
+                    </li>
+                    <li class="thumbnails-item">
+                      <img class="thumbnails-image" src="images/gallery/topseller/06_thumb.jpg">
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn-gallery" type="button">
+                    <i class="fas fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- GALLERY CONTENT: 3 / SALE OFF -->
+            <!-- GALLERY CONTENT: 4 / TOP RATED -->
+          <!-- </div> -->
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="product-box">
-            <div class="photo">
-              <img class="photo__image" src="./images/new/bed/03.jpg">
-              <div class="sale">sale</div>
-              <div class="buttons">
-                <a href="#" class="btn-main-small">Quick View</a>
-                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Aenean Ru Bristique</h5>
-              <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="line"></div>
-            <div class="actions">
-              <div class="outlines">
-                <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
-                <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
-              </div>
-              <div class="price">
-                <div class="btn-main-small no-hover price">$ 30.00</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="product-box">
-            <div class="photo">
-              <img class="photo__image" src="./images/new/bed/04.jpg">
-              <div class="sale">sale</div>
-              <div class="buttons">
-                <a href="#" class="btn-main-small">Quick View</a>
-                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Aenean Ru Bristique</h5>
-              <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="line"></div>
-            <div class="actions">
-              <div class="outlines">
-                <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
-                <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
-              </div>
-              <div class="price">
-                <div class="price__oldprice">$ 50.00</div>
-                <div class="btn-main-small no-hover price">$ 30.00</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="product-box">
-            <div class="photo">
-              <img class="photo__image" src="./images/new/bed/05.jpg">
-              <div class="sale">sale</div>
-              <div class="buttons">
-                <a href="#" class="btn-main-small">Quick View</a>
-                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Aenean Ru Bristique</h5>
-              <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="line"></div>
-            <div class="actions">
-              <div class="outlines">
-                <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
-                <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
-              </div>
-              <div class="price">
-                <div class="btn-main-small no-hover price">$ 30.00</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="product-box">
-            <div class="photo">
-              <img class="photo__image" src="./images/new/bed/06.jpg">
-              <div class="sale">sale</div>
-              <div class="buttons">
-                <a href="#" class="btn-main-small">Quick View</a>
-                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Aenean Ru Bristique</h5>
-              <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="line"></div>
-            <div class="actions">
-              <div class="outlines">
-                <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
-                <a href="#" class="btn-outline active"><i class="fas fa-exchange-alt"></i></a>
-              </div>
-              <div class="price">
-                <div class="btn-main-small no-hover price">$ 30.00</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="product-box">
-            <div class="photo">
-              <img class="photo__image" src="./images/new/bed/07.jpg">
-              <div class="sale">sale</div>
-              <div class="buttons">
-                <a href="#" class="btn-main-small">Quick View</a>
-                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Aenean Ru Bristique</h5>
-              <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="line"></div>
-            <div class="actions">
-              <div class="outlines">
-                <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
-                <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
-              </div>
-              <div class="price">
-                <div class="price__oldprice">$ 50.00</div>
-                <div class="btn-main-small no-hover price">$ 30.00</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="product-box">
-            <div class="photo">
-              <img class="photo__image" src="./images/new/bed/08.jpg">
-              <div class="sale">sale</div>
-              <div class="buttons">
-                <a href="#" class="btn-main-small">Quick View</a>
-                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Aenean Ru Bristique</h5>
-              <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="line"></div>
-            <div class="actions">
-              <div class="outlines">
-                <a href="#" class="btn-outline active"><i class="far fa-heart"></i></a>
-                <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
-              </div>
-              <div class="price">
-                <div class="btn-main-small no-hover price">$ 30.00</div>
-              </div>
-            </div>
+        <div class="col-6">
+          <div class="gallery-right-side">
+            <p class="gallery-right-side__from-price">from<span class="gallery-right-side__big-price"> $50.80</span></p>
+            <p class="gallery-right-side__product-name">bedroom bed</p>
+            <button class="gallery-right-side__btn-green" type="button">shop now</button>
           </div>
         </div>
       </div>
@@ -553,16 +1833,17 @@
           </div>
           <div class="col"></div>
           <div class="col-auto dots">
-            <ul>
-              <li><a href="#" class="active"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+            <ul class="blog-slider-dots">
+              <li><a class="blog-slider-dots__link"></a></li>
+              <li><a class="blog-slider-dots__link"></a></li>
+              <li><a class="blog-slider-dots__link"></a></li>
+              <li><a class="blog-slider-dots__link"></a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+      <div class="row blog-slider">
+        <div class="">
           <a class="post-box-link" href="#">
             <div class="post-box">
               <div class="cover">
@@ -572,7 +1853,7 @@
                     <i class="fas fa-calendar-alt"></i> 15 Jan 2016
                   </div>
                   <div class="comments">
-                    <i class="fas fa-comments"></i> 4 Comments
+                    <i class="fas fa-comments"></i> 1 Comment
                   </div>
                 </div>
               </div>
@@ -587,7 +1868,7 @@
             </div>
           </a>
         </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <div class="">
           <a class="post-box-link" href="#">
             <div class="post-box">
               <div class="cover">
@@ -597,7 +1878,7 @@
                     <i class="fas fa-calendar-alt"></i> 15 Jan 2016
                   </div>
                   <div class="comments">
-                    <i class="fas fa-comments"></i> 4 Comments
+                    <i class="fas fa-comments"></i> 2 Comments
                   </div>
                 </div>
               </div>
@@ -612,11 +1893,36 @@
             </div>
           </a>
         </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <div class="">
           <a class="post-box-link" href="#">
             <div class="post-box">
               <div class="cover">
                 <img class="cover__image" src="./images/blog/03.jpg">
+                <div class="details">
+                  <div class="date">
+                    <i class="fas fa-calendar-alt"></i> 15 Jan 2016
+                  </div>
+                  <div class="comments">
+                    <i class="fas fa-comments"></i> 3 Comments
+                  </div>
+                </div>
+              </div>
+              <div class="post-info">
+                <h5 class="post-info__header">Products That Fight Static </h5>
+                <p class="post-info__text">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo
+                  vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
+                <div class="post-info__more">
+                  <span class="btn-main post-info__btn-more">Read more</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="">
+          <a class="post-box-link" href="#">
+            <div class="post-box">
+              <div class="cover">
+                <img class="cover__image" src="./images/blog/04.jpg">
                 <div class="details">
                   <div class="date">
                     <i class="fas fa-calendar-alt"></i> 15 Jan 2016
@@ -644,7 +1950,7 @@
     <div class="footer-menu">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
             <div class="menu-wrapper">
               <h6>Information</h6>
               <ul>
@@ -655,7 +1961,7 @@
               </ul>
             </div>
           </div>
-          <div class="col">
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
             <div class="menu-wrapper">
               <h6>My account</h6>
               <ul>
@@ -666,7 +1972,7 @@
               </ul>
             </div>
           </div>
-          <div class="col">
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
             <div class="menu-wrapper">
               <h6>Information</h6>
               <ul>
@@ -677,7 +1983,7 @@
               </ul>
             </div>
           </div>
-          <div class="col">
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
             <div class="menu-wrapper">
               <h6>Orders</h6>
               <ul>
@@ -695,7 +2001,9 @@
     <div class="bottom-bar">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col"></div>
+          <div class="bottom-bar__special-box">
+            <p class="bottom-bar__special-text">Lorem ipsum</p>
+          </div>
           <div class="col copyright text-center">
             <p>©Copyright 2016 Bazar | All Rights Reserved</p>
           </div>
@@ -718,7 +2026,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="./scripts/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.8/tiny-slider.js"></script>
   <script src="./scripts/app.js"></script>
+  <script src="./scripts/blog-slider.js"></script>
+  <script src="./scripts/stars.js"></script>
+</body>
 </body>
 
 </html>

@@ -9,3 +9,21 @@
 %hover-border {
     transition: border-top-color $hover-border-transition ease-in;
 }
+
+%hover-opacity {
+    transition: opacity $hover-element-transition ease-in;
+}
+
+%triangle {
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-bottom: 30px solid #000;
+    border-left: 30px solid transparent;
+    margin: -1px;
+}
+
+%btn-outline-transition {
+    transition: color $hover-border-transition ease-in,
+        border $hover-border-transition ease-in;
+}

@@ -80,5 +80,33 @@ footer {
         }
       }
     }
+    &__special-box {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, md)) and (max-width: map-get($grid-breakpoints, lg))  {
+  .copyright {
+    text-align: left !important;
+  }
+
+  .socialmedia {
+    text-align: right !important;
+  }
+
+  footer .bottom-bar {
+    &__special-box {
+      display: block;
+      width: 100%;
+    }
+    
+    &__special-text {
+      margin: auto;
+      text-align: center;
+      color: $footer-text-color;
+      font-size: 14px;
+      line-height: 26px;
+    }
   }
 }
