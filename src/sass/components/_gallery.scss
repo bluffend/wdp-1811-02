@@ -8,7 +8,7 @@
     }
 
     &__item {
-        flex: 0 1 25%;
+        flex: 1 1 auto;
         text-align: center;
         min-height: 45px;
         padding: 4px 0;
@@ -196,16 +196,9 @@
         overflow: hidden;
 
         .thumbnails-list {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
             margin: 0;
             padding: 0;
             list-style: none;
-        }
-
-        .thumbnails-item:not(:last-child) {
-            margin-right: 6px;
         }
 
         .thumbnails-image {
@@ -216,12 +209,11 @@
             opacity: .5;
             @extend %hover-opacity;
 
-            &--active {
+            &--active, &:hover {
                 opacity: 1;
             }
 
             &:hover {
-                opacity: .75;
                 @extend %hover-opacity;
             }
         }
@@ -241,6 +233,13 @@
         &:hover {
             color: $primary;
             @extend %hover-element;
+        }
+        &:disabled {
+            cursor: default;
+
+            &:hover {
+                color: #fff;
+            }
         }
     }
 }
@@ -293,5 +292,11 @@
             background-color: lighten($gallery-right-text-color-alternate, 10%);
             @extend %hover-bg;
         }
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, md) - 1) {
+    .col-right-side {
+      display: none;
     }
 }
