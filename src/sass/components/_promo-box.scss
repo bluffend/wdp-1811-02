@@ -22,7 +22,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    margin: 20px 22px;
+    margin: 5%;
     background-color: #292929;
     opacity: 0.4;
     color: #ffffff;
@@ -33,7 +33,7 @@
     left: 20px;
     top: 22px;
     margin-left: 3vw;
-    margin-top: 145px;
+    margin-top: 165px;
     color: white;
     opacity: 0.95;
     
@@ -44,7 +44,8 @@
       padding: 0;
     }
     .product-name {
-        font-size: 58px;
+        font-size: 56px;
+        font-weight: bold;
         margin-top: -25px;
     }
     .product-rebate {
@@ -125,3 +126,40 @@
       }
     }
 }
+
+@media (min-width: 768px) and (max-width: 991px) { 
+
+.promo-box-small {
+  
+  .collection {
+    margin: 25% auto 10%;
+
+    .collection-title {
+    font-size: 1.3em;
+    }
+    .collection-subtitle {
+      font-size: 0.9em;
+    }
+    .collection-price {
+      font-size: 1.6em;
+    }
+  }
+
+  .special-collection {
+    margin-top: 30%;
+    
+    .special-collection-title {
+      font-size: 1.2em;
+    }
+    .special-collection-subtitle {
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+  }
+}
+  
+  
+
+
+}
+
