@@ -1,0 +1,15 @@
+var gallerySlider = tns({
+    "container": ".gallerySlider",
+    "mode": "carousel",
+    "items": 1,
+    "gutter": 6,
+    "edgePadding": 0,
+    "fixedWidth": 70,
+    "slideBy": "page",
+    "prevButton": ".gallerySliderPrevBtn",
+    "nextButton": ".gallerySliderNextBtn",
+    "nav": false,
+    "speed": 250,
+    "loop": false,
+    "mouseDrag": true,
+});
