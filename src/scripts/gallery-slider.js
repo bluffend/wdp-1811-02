@@ -104,7 +104,7 @@ function clickLink() {
         setTimeout(() => {
             bigImageNode.src = bigImages[activeThumb].src;
             bigImageNode.parentElement.style.opacity = "1";
-        }, 300 / 2);
+        }, 250 / 2);
 
         bigImageNode.parentElement.style.opacity = "0";
     }
