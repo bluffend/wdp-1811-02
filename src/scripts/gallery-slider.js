@@ -62,8 +62,11 @@ var gallerySlider4 = tns({
     "mouseDrag": true,
 });
 
+const galleryPath = ["featured", "topseller", "saleoff", "toprated"];
+
 let galleryMenu = document.querySelectorAll('.gallery-menu__link');
 let thumbs = document.querySelectorAll('.js-galleryThumbs');
+let bigImages = [];
 
 function currentActiveMenu() {
     for (var item = 0; item < galleryMenu.length; item++)
@@ -71,20 +74,19 @@ function currentActiveMenu() {
             return item;
 }
 
+function preloadBigImages() {
+    for (folder = 0; folder < galleryPath.length; folder++)
+        for (var file = 0; file < 6; file++) {
+            bigImages[folder * 6 + file] = new Image();
+            bigImages[folder * 6 + file].src = "images/gallery/" + galleryPath[folder] + "/" + (("0" + (file + 1)).slice(-2)) + ".jpg";
+        }
+}
+
 function clickLink() {
-    const galleryPath = [
-        [0, "featured"],
-        [1, "topseller"],
-        [2, "saleoff"],
-        [3, "toprated"]
-    ];
-
     let bigImageNode = document.querySelector('#nav-galleryContent .active .gallery-tabcontent__big-image');
-
     let currMenu = currentActiveMenu();
 
     function currentActiveThumb() {
-
         for (var item = (currMenu * 6); item < ((currMenu + 1) * 6); item++) {
             if (thumbs[item].classList.contains('thumbnails-image--active'))
                 return item;
@@ -100,7 +102,7 @@ function clickLink() {
         activeThumb = currentActiveThumb();
 
         setTimeout(() => {
-            bigImageNode.src = "images/gallery/" + galleryPath[currMenu][1] + "/" + (("0" + ((activeThumb % 6) + 1)).slice(-2)) + ".jpg";
+            bigImageNode.src = bigImages[activeThumb].src;
             bigImageNode.parentElement.style.opacity = "1";
         }, 300 / 2);
 
@@ -111,3 +113,5 @@ function clickLink() {
 for (var item = 0; item < thumbs.length; item++) {
     thumbs[item].addEventListener('click', clickLink, false);
 };
+
+preloadBigImages();
