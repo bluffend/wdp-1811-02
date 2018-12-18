@@ -28,11 +28,11 @@
     color: #ffffff;
   }
   .rebate-info {
-    width: 80%;
+    width: fit-content;
     position: absolute;
     left: 20px;
     top: 22px;
-    margin-left: 15px;
+    margin-left: 3vw;
     margin-top: 145px;
     color: white;
     opacity: 0.95;
@@ -72,57 +72,56 @@
   }
 
   .collection {
-    width: 60%;
-    float: center;
-    margin: auto;
-    margin-left: 33%;
-    margin-top: 5%;
-      
-    p {
-      font-weight: 400;
-      margin-bottom: 0;
-
-      &.collection-title {
-        font-size: 30px;
+    width: fit-content;
+    margin: 10% auto;
+    text-align: left;
+          
+      .collection-title {
+        font-weight: 400;
+        margin-bottom: 0;
+        font-size: 1.8em;
         letter-spacing: 1px;
-      
+              
         .promo-bold {
           font-weight: bold;
         }
       }
-      &.collection-subtitle {
+      .collection-subtitle {
         margin-top: -5px;
-        font-size: 20px;
+        margin-bottom: 0;
+        font-size: 1em;
         letter-spacing: 2.5px;
         font-weight: bold;
       }
-      &.collection-price {
+      .collection-price {
         margin-top: -5px;
-        font-size: 36px;
+        font-size: 2em;
         font-weight: 500;
-        color: $primary;
+        color: $primary;        
       }
     }
-  }
-  
-  .special-collection {
-    width: 50%;
-    float: right;
-    margin: auto;
-    margin-left: 33%;
-    margin-top: 15%;
     
-    .special-collection-title {
-       font-size: 22px;
-       font-weight: 400;
-       letter-spacing: 1.5px;
-       color: $primary;
+    .special-collection {
+      width: fit-content;
+      float: right;
+      margin-top: 15%;
+      margin-right: 2vw;
+      text-align: right;
+    
+      .special-collection-title {
+        font-size: 1.5em;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        color: $primary;
+        .promo-bold {
+          font-weight: bold;
+        }
       }
-    .special-collection-subtitle {
-        font-size: 16px;
+      .special-collection-subtitle {
+        font-size: 1rem;
         font-weight: 500;
         margin-top: -10px;
         padding-left: 13px;
       }
-  }
+    }
 }
