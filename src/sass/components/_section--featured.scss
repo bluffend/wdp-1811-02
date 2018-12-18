@@ -1,0 +1,150 @@
+.hot-deals  {
+  display: flex;
+  flex-direction: column;
+  .bar {
+    display: flex;
+    background-color: $form-border-color;
+    margin: 0 1px;
+    padding: 15px 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    .bar-header {
+        color: #fff;
+        text-transform: uppercase;
+      h5 {
+        margin: .3rem 0;
+      }
+    }
+
+    .dots {
+      line-height: 0;
+        ul {
+          margin: .3rem 0;
+          padding: 0 0 0 1rem;
+          list-style: none;
+          
+          li {
+            display: inline-block;
+            margin-left: 0.5rem;
+    
+            a {
+              display: block;
+              width: 13px;
+              height: 13px;
+              border-radius: 6px;
+              background-color: #fff;
+    
+              &.active,
+              &:hover {
+                @extend %hover-bg;
+                background-color: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+    .product-box {
+      border-top: none;
+      margin: 0;
+      .photo-box {
+        height: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../images/new/bed/01.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .buttons {
+        align-self: center;
+        margin: 25% 0;
+      }
+      .counter {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-self: flex-end;
+        justify-content: center;
+        .counter-circle {
+          position: relative;
+          margin: .2rem;
+          height: 60px;
+          width: 60px;
+          padding-top: 10px;
+          text-align: center;
+          vertical-align: middle;
+          border-radius: 50%;
+          background-color: $text-color;
+          color: #fff;
+          opacity: 0;
+          transition: .7s ease;
+          p {
+            font-size: 20px;
+            margin: 0;
+            line-height: 20px;
+          }
+        }
+      }
+    &:hover .counter-circle {
+      transition: .7s ease;
+      opacity: 1;
+    }
+  }
+}
+.featured-box {
+  display: flex;
+  flex-direction: column;
+  .featured--slider {
+    height: 100%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/blog/01.jpg");
+    background-size: cover;
+    background-position: center;
+    .featured--slider-textarea {
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 4rem 0;
+      background-color: rgba(0,0,0,.5);
+      .featured--slider-header {
+        font-size: 60px;
+        font-weight: 200;
+        strong {
+          font-weight: 600;
+        }
+      }
+      .featured--slider-p {
+        font-size: 25px;
+        font-weight: 200;
+      }
+    }
+    .btn-main {
+      margin-top: -1.5rem;
+      color: $form-border-color;
+      background-color: #fff;
+      transition: background-color $hover-bg-transition ease-out;
+      &:hover {
+        @extend %hover-bg;
+        background-color: $primary;
+      }
+    }
+  }
+  .featured--slider-nav {
+    display: flex;
+    flex-direction: row;
+    .btn-main {
+      flex: 1;
+      text-align: center;
+      padding: 15px 0;
+      transition: all $hover-bg-transition ease-out;
+    }
+  }
+}
