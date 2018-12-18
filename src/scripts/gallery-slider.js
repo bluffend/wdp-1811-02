@@ -102,7 +102,7 @@ function clickLink() {
         setTimeout(() => {
             bigImageNode.src = "images/gallery/" + galleryPath[currMenu][1] + "/" + (("0" + ((activeThumb % 6) + 1)).slice(-2)) + ".jpg";
             bigImageNode.parentElement.style.opacity = "1";
-        }, 250 / 2);
+        }, 300 / 2);
 
         bigImageNode.parentElement.style.opacity = "0";
     }
