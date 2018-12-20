@@ -10,28 +10,6 @@
     &__item {
         flex: 0 1 25%;
         text-align: center;
-        min-height: 45px;
-        padding: 4px 0;
-
-        &:hover {
-            border-top: 4px solid $primary;
-            padding-top: 0;
-            cursor: pointer;
-
-            .gallery-menu__link {
-                color: $text-color;
-            }
-        }
-
-        &.active {
-            background-color: $menu-bg-color-active;
-            border-top: 4px solid $primary;
-            padding-top: 0;
-
-            .gallery-menu__link {
-                color: $primary;
-            }
-        }
     }
 
     &__item:not(:last-child) {
@@ -44,18 +22,37 @@
         font-weight: 600;
         text-transform: uppercase;
         line-height: 37px;
-        padding: 0;
+        padding: 4px 0;
+
+        &:hover {
+            border-top: 4px solid $primary;
+            padding-top: 0;
+            color: $text-color;
+            cursor: pointer;
+        }
+
+        &.active {
+            background-color: $menu-bg-color-active;
+            border-top: 4px solid $primary;
+            padding-top: 0px;
+            color: $primary;
+            cursor: default;
+        }
     }
 }
 
 .gallery-content {
     border: 1px solid $border-color;
     border-top: none;
+    display: block;
 }
 
 .gallery-tabcontent {
     position: relative;
     margin: 0;
+    opacity: 1;
+    @extend %hover-opacity;
+    transition-duration: $hover-element-transition / 2;
 
     &__big-image {
         height: 400px;
@@ -196,16 +193,9 @@
         overflow: hidden;
 
         .thumbnails-list {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
             margin: 0;
             padding: 0;
             list-style: none;
-        }
-
-        .thumbnails-item:not(:last-child) {
-            margin-right: 6px;
         }
 
         .thumbnails-image {
@@ -216,12 +206,11 @@
             opacity: .5;
             @extend %hover-opacity;
 
-            &--active {
+            &--active, &:hover {
                 opacity: 1;
             }
 
             &:hover {
-                opacity: .75;
                 @extend %hover-opacity;
             }
         }

@@ -1743,101 +1743,325 @@
           <div class="col menu gallery-menu">
             <ul class="nav gallery-menu__list" id="galleryTab" role="tablist">
               <li class="nav-item gallery-menu__item">
-                <a class="nav-link gallery-menu__link" id="galleryFeatured-tab" data-toggle="tab" href="#gallery-featured"
-                  role="tab" aria-controls="gFeatured" aria-selected="true">Featured</a></li>
-              <li class="nav-item active gallery-menu__item">
-                <a class="nav-link gallery-menu__link" id="galleryTopseller-tab" data-toggle="tab" href="#gallery-topseller"
+                <a class="nav-link gallery-menu__link" id="galleryFeatured-tab" data-toggle="tab" href="#gallery-featured" role="tab"
+                  aria-controls="gFeatured" aria-selected="false">Featured</a></li>
+              <li class="nav-item gallery-menu__item">
+                <a class="nav-link active gallery-menu__link" id="galleryTopseller-tab" data-toggle="tab" href="#gallery-topseller"
                   role="tab" aria-controls="gTopseller" aria-selected="true">Top seller</a></li>
               <li class="nav-item gallery-menu__item">
-                <a class="nav-link gallery-menu__link" id="gallerySaleoff-tab" data-toggle="tab" href="#gallery-saleoff"
-                  role="tab" aria-controls="gSaleoff" aria-selected="true">Sale off</a></li>
+                <a class="nav-link gallery-menu__link" id="gallerySaleoff-tab" data-toggle="tab" href="#gallery-saleoff" role="tab"
+                  aria-controls="gSaleoff" aria-selected="false">Sale off</a></li>
               <li class="nav-item gallery-menu__item">
-                <a class="nav-link gallery-menu__link" id="galleryToprated-tab" data-toggle="tab" href="#gallery-toprated"
-                  role="tab" aria-controls="gToprated" aria-selected="true">Top rated</a></li>
+                <a class="nav-link gallery-menu__link" id="galleryToprated-tab" data-toggle="tab" href="#gallery-toprated" role="tab"
+                  aria-controls="gToprated" aria-selected="false">Top rated</a></li>
             </ul>
           </div>
-          <!-- <div class="tab-content tab-box" id="nav-galleryContent"> -->
-          <!-- GALLERY TAB CONTENT: 1 / FEATURED -->
-          <!-- <div class="tab-pane fade" id="galleryFeatured" role="tabpanel" aria-labelledby="featured-tab"> -->
-          <!-- </div> -->
-          <!-- GALLERY TAB CONTENT: 2 / TOP SELLER -->
-          <!-- <div class="tab-pane fade show active" id="galleryTopseller" role="tabpanel" aria-labelledby="topseller-tab"> -->
-          <div class="gallery-content">
-            <div class="gallery-tabcontent">
-              <img class="gallery-tabcontent__big-image" src="./images/gallery/topseller/01.jpg">
-              <div class="gallery-tabcontent__buttons-box">
-                <div class="btn-container">
-                  <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
-                  <div class="btn-tooltip">Add to Favorites</div>
-                </div>
-                <div class="btn-container">
-                  <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
-                  <div class="btn-tooltip">Add to Compare</div>
-                </div>
-                <div class="btn-container">
-                  <a href="#" class="btn-outline"><i class="fas fa-eye"></i></a>
-                  <div class="btn-tooltip">See details</div>
-                </div>
-                <div class="btn-container">
-                  <a href="#" class="btn-outline"><i class="fa fa-shopping-basket"></i></a>
-                  <div class="btn-tooltip">Add to Cart</div>
-                </div>
-              </div>
-              <div class="gallery-tabcontent__product-description">
-                <div class="product__info">
-                  <div class="content">
-                    <h5 class="product-title">Aenean Ru Bristique</h5>
-                    <div class="stars">
-                      <a href="#" class="full"></a>
-                      <a href="#" class="full"></a>
-                      <a href="#"></a>
-                      <a href="#"></a>
-                      <a href="#"></a>
+          <div class="js-gallery-tab-content-temporary tab-box" id="nav-galleryContent">
+            <!-- GALLERY TAB CONTENT: 1 / FEATURED -->
+            <div class="tab-pane fade" id="gallery-featured" role="tabpanel" aria-labelledby="gFeatured-tab">
+              <div class="gallery-content">
+                <div class="gallery-tabcontent">
+                  <img class="gallery-tabcontent__big-image" src="./images/gallery/featured/01.jpg">
+                  <div class="gallery-tabcontent__buttons-box">
+                    <div class="btn-container">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <div class="btn-tooltip">Add to Favorites</div>
                     </div>
-                    <div class="triangle-topleft"></div>
-                    <div class="triangle-bottomright"></div>
+                    <div class="btn-container">
+                    <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                      <div class="btn-tooltip">Add to Compare</div>
+                    </div>
+                    <div class="btn-container">
+                    <a href="#" class="btn-outline"><i class="fas fa-eye"></i></a>
+                      <div class="btn-tooltip">See details</div>
+                    </div>
+                    <div class="btn-container">
+                    <a href="#" class="btn-outline"><i class="fa fa-shopping-basket"></i></a>
+                      <div class="btn-tooltip">Add to Cart</div>
+                    </div>
+                  </div>
+                  <div class="gallery-tabcontent__product-description">
+                    <div class="product__info">
+                      <div class="content">
+                        <h5 class="product-title">Aenean Ru Bristique</h5>
+                        <div class="stars">
+                          <a href="#" class="full"></a>
+                          <a href="#" class="full"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </div>
+                        <div class="triangle-topleft"></div>
+                        <div class="triangle-bottomright"></div>
+                      </div>
+                    </div>
+                    <div class="product__prices">
+                      <div class="price">$120.00</div>
+                      <div class="old-price">$160.00</div>
+                    </div>
                   </div>
                 </div>
-                <div class="product__prices">
-                  <div class="price">$120.00</div>
-                  <div class="old-price">$160.00</div>
+                <div class="gallery-thumbnails">
+                  <button class="btn-gallery gallery-thumbnails__prevButton gSliderPrev1" type="button">
+                      <i class="fas fa-angle-left"></i>
+                  </button>
+                  <div class="gallery-thumbnails__content">
+                    <ul class="thumbnails-list gallerySlider1">
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image--active js-galleryThumbs" src="images/gallery/featured/01_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/featured/02_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/featured/03_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/featured/04_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/featured/05_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/featured/06_thumb.jpg">
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="btn-gallery gallery-thumbnails__nextButton gSliderNext1" type="button">
+                      <i class="fas fa-angle-right"></i>
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="gallery-thumbnails">
-              <button class="btn-gallery" type="button">
-                <i class="fas fa-angle-left"></i>
-              </button>
-              <div class="gallery-thumbnails__content">
-                <ul class="thumbnails-list">
-                  <li class="thumbnails-item">
-                    <img class="thumbnails-image--active" src="images/gallery/topseller/01_thumb.jpg">
-                  </li>
-                  <li class="thumbnails-item">
-                    <img class="thumbnails-image" src="images/gallery/topseller/02_thumb.jpg">
-                  </li>
-                  <li class="thumbnails-item">
-                    <img class="thumbnails-image" src="images/gallery/topseller/03_thumb.jpg">
-                  </li>
-                  <li class="thumbnails-item">
-                    <img class="thumbnails-image" src="images/gallery/topseller/04_thumb.jpg">
-                  </li>
-                  <li class="thumbnails-item">
-                    <img class="thumbnails-image" src="images/gallery/topseller/05_thumb.jpg">
-                  </li>
-                  <li class="thumbnails-item">
-                    <img class="thumbnails-image" src="images/gallery/topseller/06_thumb.jpg">
-                  </li>
-                </ul>
+            <!-- GALLERY TAB CONTENT: 2 / TOP SELLER -->
+            <div class="tab-pane fade show active" id="gallery-topseller" role="tabpanel" aria-labelledby="gTopseller-tab">
+              <div class="gallery-content">
+                <div class="gallery-tabcontent">
+                  <img class="gallery-tabcontent__big-image" src="./images/gallery/topseller/01.jpg">
+                  <div class="gallery-tabcontent__buttons-box">
+                    <div class="btn-container">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <div class="btn-tooltip">Add to Favorites</div>
+                    </div>
+                    <div class="btn-container">
+                    <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                      <div class="btn-tooltip">Add to Compare</div>
+                    </div>
+                    <div class="btn-container">
+                    <a href="#" class="btn-outline"><i class="fas fa-eye"></i></a>
+                      <div class="btn-tooltip">See details</div>
+                    </div>
+                    <div class="btn-container">
+                    <a href="#" class="btn-outline"><i class="fa fa-shopping-basket"></i></a>
+                      <div class="btn-tooltip">Add to Cart</div>
+                    </div>
+                  </div>
+                  <div class="gallery-tabcontent__product-description">
+                    <div class="product__info">
+                      <div class="content">
+                        <h5 class="product-title">Aenean Ru Bristique</h5>
+                        <div class="stars">
+                          <a href="#" class="full"></a>
+                          <a href="#" class="full"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </div>
+                        <div class="triangle-topleft"></div>
+                        <div class="triangle-bottomright"></div>
+                      </div>
+                    </div>
+                    <div class="product__prices">
+                      <div class="price">$120.00</div>
+                      <div class="old-price">$160.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-thumbnails">
+                  <button class="btn-gallery gallery-thumbnails__prevButton gSliderPrev2" type="button">
+                      <i class="fas fa-angle-left"></i>
+                  </button>
+                  <div class="gallery-thumbnails__content">
+                    <ul class="thumbnails-list gallerySlider2">
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image--active js-galleryThumbs" src="images/gallery/topseller/01_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/topseller/02_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/topseller/03_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/topseller/04_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/topseller/05_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/topseller/06_thumb.jpg">
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="btn-gallery gallery-thumbnails__nextButton gSliderNext2" type="button">
+                      <i class="fas fa-angle-right"></i>
+                  </button>
+                </div>
               </div>
-              <button class="btn-gallery" type="button">
-                <i class="fas fa-angle-right"></i>
-              </button>
+            </div>
+            <!-- GALLERY CONTENT: 3 / SALE OFF -->
+            <div class="tab-pane fade" id="gallery-saleoff" role="tabpanel" aria-labelledby="gSaleoff-tab">
+              <div class="gallery-content">
+                <div class="gallery-tabcontent">
+                  <img class="gallery-tabcontent__big-image" src="./images/gallery/saleoff/01.jpg">
+                  <div class="gallery-tabcontent__buttons-box">
+                    <div class="btn-container">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <div class="btn-tooltip">Add to Favorites</div>
+                    </div>
+                    <div class="btn-container">
+                    <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                      <div class="btn-tooltip">Add to Compare</div>
+                    </div>
+                    <div class="btn-container">
+                    <a href="#" class="btn-outline"><i class="fas fa-eye"></i></a>
+                      <div class="btn-tooltip">See details</div>
+                    </div>
+                    <div class="btn-container">
+                    <a href="#" class="btn-outline"><i class="fa fa-shopping-basket"></i></a>
+                      <div class="btn-tooltip">Add to Cart</div>
+                    </div>
+                  </div>
+                  <div class="gallery-tabcontent__product-description">
+                    <div class="product__info">
+                      <div class="content">
+                        <h5 class="product-title">Aenean Ru Bristique</h5>
+                        <div class="stars">
+                          <a href="#" class="full"></a>
+                          <a href="#" class="full"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </div>
+                        <div class="triangle-topleft"></div>
+                        <div class="triangle-bottomright"></div>
+                      </div>
+                    </div>
+                    <div class="product__prices">
+                      <div class="price">$120.00</div>
+                      <div class="old-price">$160.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-thumbnails">
+                  <button class="btn-gallery gallery-thumbnails__prevButton gSliderPrev3" type="button">
+                      <i class="fas fa-angle-left"></i>
+                  </button>
+                  <div class="gallery-thumbnails__content">
+                    <ul class="thumbnails-list gallerySlider3">
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image--active js-galleryThumbs" src="images/gallery/saleoff/01_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/saleoff/02_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/saleoff/03_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/saleoff/04_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/saleoff/05_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/saleoff/06_thumb.jpg">
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="btn-gallery gallery-thumbnails__nextButton gSliderNext3" type="button">
+                      <i class="fas fa-angle-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- GALLERY CONTENT: 4 / TOP RATED -->
+            <div class="tab-pane fade" id="gallery-toprated" role="tabpanel" aria-labelledby="gToprated-tab">
+              <div class="gallery-content">
+                <div class="gallery-tabcontent">
+                  <img class="gallery-tabcontent__big-image" src="./images/gallery/toprated/01.jpg">
+                  <div class="gallery-tabcontent__buttons-box">
+                    <div class="btn-container">
+                      <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                      <div class="btn-tooltip">Add to Favorites</div>
+                    </div>
+                    <div class="btn-container">
+                    <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+                      <div class="btn-tooltip">Add to Compare</div>
+                    </div>
+                    <div class="btn-container">
+                    <a href="#" class="btn-outline"><i class="fas fa-eye"></i></a>
+                      <div class="btn-tooltip">See details</div>
+                    </div>
+                    <div class="btn-container">
+                    <a href="#" class="btn-outline"><i class="fa fa-shopping-basket"></i></a>
+                      <div class="btn-tooltip">Add to Cart</div>
+                    </div>
+                  </div>
+                  <div class="gallery-tabcontent__product-description">
+                    <div class="product__info">
+                      <div class="content">
+                        <h5 class="product-title">Aenean Ru Bristique</h5>
+                        <div class="stars">
+                          <a href="#" class="full"></a>
+                          <a href="#" class="full"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </div>
+                        <div class="triangle-topleft"></div>
+                        <div class="triangle-bottomright"></div>
+                      </div>
+                    </div>
+                    <div class="product__prices">
+                      <div class="price">$120.00</div>
+                      <div class="old-price">$160.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-thumbnails">
+                  <button class="btn-gallery gallery-thumbnails__prevButton gSliderPrev4" type="button">
+                      <i class="fas fa-angle-left"></i>
+                  </button>
+                  <div class="gallery-thumbnails__content">
+                    <ul class="thumbnails-list gallerySlider4">
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image--active js-galleryThumbs" src="images/gallery/toprated/01_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/toprated/02_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/toprated/03_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/toprated/04_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/toprated/05_thumb.jpg">
+                      </li>
+                      <li class="thumbnails-item">
+                        <img class="thumbnails-image js-galleryThumbs" src="images/gallery/toprated/06_thumb.jpg">
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="btn-gallery gallery-thumbnails__nextButton gSliderNext4" type="button">
+                      <i class="fas fa-angle-right"></i>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- GALLERY CONTENT: 3 / SALE OFF -->
-          <!-- GALLERY CONTENT: 4 / TOP RATED -->
-          <!-- </div> -->
         </div>
         <div class="col-6">
           <div class="gallery-right-side">
@@ -2148,11 +2372,10 @@
     crossorigin="anonymous"></script>
   <script src="./scripts/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.8/tiny-slider.js"></script>
-  <script src="./scripts/app.js"></script>
   <script src="./scripts/products-slider.js"></script>
+  <script src="./scripts/gallery-slider.js"></script>
   <script src="./scripts/blog-slider.js"></script>
   <script src="./scripts/stars.js"></script>
+  <script src="./scripts/app.js"></script>
 </body>
-</body>
-
 </html>
