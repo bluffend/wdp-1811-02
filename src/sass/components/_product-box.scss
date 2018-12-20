@@ -1,6 +1,5 @@
 .product-box {
   background-color: #ffffff;
-  border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
 
   .photo {
@@ -129,4 +128,71 @@
   right: 0px;
   top: -58px;
   padding: 0;
+}
+
+.product-outline {
+  border: 1px solid #e1e1e1;
+}
+
+.productsDots__link:hover {
+  cursor: pointer;
+}
+
+@media (min-width: map-get($grid-breakpoints, md)) and (max-width: map-get($grid-breakpoints, xl) - 1) {
+  .product-box {
+
+    .buttons .btn-main-small {
+      padding: 5px 5px;
+      text-align: center;
+    }
+
+    .actions {
+      padding: 15px 5px 10px;
+
+      .price__oldprice {
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: map-get($grid-breakpoints, sm) - 1) {
+  .product-box .buttons .btn-main-small {
+    margin: 0 20px;
+    padding: 15px 20px;
+    text-align: center;
+    opacity: 1;
+  }
+}
+
+@media (max-width: map-get($grid-breakpoints, lg) - 1) {
+  .section--products {
+    .panel-bar {
+
+      .heading {
+        width: 100%;
+      }
+
+      .menu .nav .nav-item {
+        margin: 0 5px;
+
+        & .nav-link {
+          padding: 0.5rem 5px;
+        }
+      }
+
+      .row .heading + * {
+        border-bottom: none;
+      }
+
+      .menu {
+        margin-top: 10px;
+        padding: 0;
+      }
+    }
+
+    .tab-dots {
+      top: -112px;
+    }
+  }
 }
