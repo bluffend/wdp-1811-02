@@ -97,7 +97,8 @@
       }
     }
 
-    .blog-slider-dots .tns-nav-active .blog-slider-dots__link {
+    .blog-slider-dots .tns-nav-active .blog-slider-dots__link,
+    .tns-nav-active .productsDots__link {
       background-color: $primary;
     }
   }
