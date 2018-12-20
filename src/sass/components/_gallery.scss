@@ -8,7 +8,7 @@
     }
 
     &__item {
-        flex: 0 1 25%;
+        flex: 1 1 auto;
         text-align: center;
     }
 
@@ -231,6 +231,13 @@
             color: $primary;
             @extend %hover-element;
         }
+        &:disabled {
+            cursor: default;
+
+            &:hover {
+                color: #fff;
+            }
+        }
     }
 }
 
@@ -282,5 +289,11 @@
             background-color: lighten($gallery-right-text-color-alternate, 10%);
             @extend %hover-bg;
         }
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, md) - 1) {
+    .col-right-side {
+      display: none;
     }
 }
