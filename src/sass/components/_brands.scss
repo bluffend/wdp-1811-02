@@ -5,65 +5,61 @@
             border-bottom: 4px solid #e2e2e2;
         }
     }
-    .brands-slider {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
+    .slider-container {    
+        max-width: 1200px;
+        padding: 2rem 3rem;
+        background: white;
+        margin: 0;
+        overflow: hidden;  
+        position:relative;
     }
-    .brands-thumbnails {
-        width: 100%;
-        .thumbnails-brands-list {
-            overflow: hidden;
-            padding: 0;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-around;
-            list-style: none;
-            .thumbnails-brand {
-                display: flex;
-                border: 1px solid #e2e2e2;
-    
-                width: 143px;
-                height: 92px;
-                opacity: .5;
+    .my-slider {
+        position: relative;    
+    }
+    .slider-item {
+        background: white;    
+        .brand-logo {
+            max-height: 100%;
+            opacity: 1;
+            @extend %hover-opacity;
+            &:hover {
+                cursor: pointer;
+                opacity: .75;
                 @extend %hover-opacity;
-    
-                &--active {
-                    opacity: 1;
-                }
-    
-                &:hover {
-                    opacity: .75;
-                    @extend %hover-opacity;
-                }
-                .thumbnails-logo {
-                    object-fit: contain;
-                    margin: auto;
-                    max-height: 70%;
-                    max-width: 80%;
-                }
-            } 
-        } 
-    }   
-    .btn-gallery {
-        width: 31px;
-        height: 92px;
-        background-color: $footer-claim-bg;
-        border: none;
-        color: #fff;
-        margin: 0 7px;
+            }
+        }           
+    }
+    .controls {
+        margin: 0;
         padding: 0;
-        cursor: pointer;
-        @extend %hover-element;
-
-        &:hover {
-            color: $primary;
+        list-style: none;
+        position: absolute;
+        left: 0;    
+        background: none;
+        width: 100%;    
+        top: 50%;
+        transform: translatey(-50%);
+        display: flex;
+        align-items: center;    
+        justify-content: space-between;
+        &:focus {
+            outline: none;
+        }
+        .btn-gallery {
+            width: 31px;
+            height: 92px;
+            background-color: $footer-claim-bg;
+            border: none;
+            color: #fff;
+            margin: 0 7px;
+            padding: 0;
+            cursor: pointer;
             @extend %hover-element;
+
+            &:hover {
+                color: $primary;
+                @extend %hover-element;
+            }
         }
     }
-    
 }

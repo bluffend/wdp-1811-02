@@ -1952,39 +1952,51 @@
         <div class="col"></div>
       </div>
     </div>
-    <div class="brands-slider my-4">
-      <div>
-        <button class="btn-gallery" type="button">
-          <i class="fas fa-angle-left"></i>
-        </button>
-      </div>
-      <div class="brands-thumbnails">
-          <ul class="thumbnails-brands-list">
-            <li class="thumbnails-brand">
-              <img class="thumbnails-logo" src="images/brands/brand_1.png">
-            </li>
-            <li class="thumbnails-brand">
-              <img class="thumbnails-logo" src="images/brands/brand_2.png">
-            </li>
-            <li class="thumbnails-brand d-none d-md-flex">
-              <img class="thumbnails-logo" src="images/brands/brand_3.png">
-            </li>
-            <li class="thumbnails-brand d-none d-md-flex">
-              <img class="thumbnails-logo" src="images/brands/brand_4.png">
-            </li>
-            <li class="thumbnails-brand d-none d-lg-flex">
-              <img class="thumbnails-logo" src="images/brands/brand_1.png">
-            </li>
-            <li class="thumbnails-brand d-none d-lg-flex">
-              <img class="thumbnails-logo" src="images/brands/brand_2.png">
-            </li>
-          </ul>
-      </div>
-      <div>
-        <button class="btn-gallery" type="button">
-          <i class="fas fa-angle-right"></i>
-        </button>
-      </div>
+    <div class="slider-container">
+      <ul class="controls" id="brands-controls" aria-label="Carousel Navigation" tabindex="0">
+        <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+          <button class="btn-gallery" type="button">
+            <i class="fas fa-angle-left"></i>
+          </button>
+        </li>
+        <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+          <button class="btn-gallery" type="button">
+            <i class="fas fa-angle-right"></i>
+          </button>         
+        </li>
+      </ul>
+      <div class="brandsSlider">
+        <div class="slider-item">
+          <img class="brand-logo" src="images/brands/brand_1.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img class="brand-logo" src="images/brands/brand_2.png" alt="">                       
+        </div>
+        <div class="slider-item">
+          <img class="brand-logo" src="images/brands/brand_3.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img class="brand-logo" src="images/brands/brand_4.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img class="brand-logo" src="images/brands/brand_5.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img class="brand-logo" src="images/brands/brand_1.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img class="brand-logo" src="images/brands/brand_2.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img class="brand-logo" src="images/brands/brand_3.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img class="brand-logo" src="images/brands/brand_4.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img class="brand-logo" src="images/brands/brand_5.png" alt="">
+        </div>
+      </div>    
     </div>
     <div class="panel-bar">
       <div class="row no-gutters">
@@ -2075,6 +2087,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.8/tiny-slider.js"></script>
   <script src="./scripts/app.js"></script>
   <script src="./scripts/blog-slider.js"></script>
+  <script src="./scripts/brands-slider.js"></script>
   <script src="./scripts/stars.js"></script>
 </body>
 </body>
